@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/scss/_reset';
+:root {
+    --primary: #1976D2;
+    --body: #A9A9A9;
+    --text-menu: #FFF;
+    --text-body: #A9A9A9;
+}
+
+:root .dark-theme {
+    --primary: #191970;
+    --body: #FFF;
+    --text-menu: #FFF;
+    --text-body: #FFF;
+}
+
+body {
+    background-color: var(--body);
+}
+
+.content {
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        color: var(--text-body);
+    }
+}
