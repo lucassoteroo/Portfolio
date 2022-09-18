@@ -1,18 +1,17 @@
 @import './assets/scss/_reset';
 :root {
     --primary: #1976D2;
-    --body: #A9A9A9;
+    --body: #4B4B4B;
     --text-menu: #FFF;
-    --text-body: #A9A9A9;
+    --text-body: #4B4B4B;
 }
 
-:root .dark-theme {
-    --primary: #191970;
-    --body: #FFF;
-    --text-menu: #FFF;
-    --text-body: #FFF;
-}
-
+// :root .dark-theme {
+//     --primary: #0D47A1;
+//     --body: #FFF;
+//     --text-menu: #FFF;
+//     --text-body: #FFF;
+// }
 body {
     background-color: var(--body);
 }

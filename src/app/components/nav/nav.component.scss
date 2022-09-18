@@ -1,0 +1,27 @@
+:host {
+    .container {
+        background-color: var(--primary);
+        width: 100%;
+        ul {
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            li {
+                color: var(--text-menu);
+                font-size: 18px;
+                font-weight: 300;
+                padding-left: 60px;
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        // button {
+        //     img {
+        //         width: 21px;
+        //     }
+        // }
+    }
+}
