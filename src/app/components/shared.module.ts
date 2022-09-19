@@ -4,18 +4,21 @@ import { AppRoutingModule } from '../app-routing.module';
 
 // Components
 import { NavComponent } from './nav/nav.component';
+import { ApresentacaoComponent } from './apresentacao/apresentacao.component';
 
 
 @NgModule({
   declarations: [
-    NavComponent
+    NavComponent,
+    ApresentacaoComponent
   ],
   imports: [
     CommonModule,
     AppRoutingModule
   ],
   exports: [
-    NavComponent
+    NavComponent,
+    ApresentacaoComponent
   ]
 })
 export class SharedModule { }
