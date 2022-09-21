@@ -31,7 +31,70 @@
     }
 }
 
-@media screen and (max-width: 418px) {
+@media screen and (max-width: 1024px) {
+     :host {
+        .container {
+            padding: 15px 15px;
+            button {
+                display: block;
+                font-size: 18px;
+                color: #fff;
+            }
+            nav.active {
+                height: 60px;
+                transition: .6s;
+                visibility: visible;
+                overflow-y: auto;
+                ul {
+                    li {
+                        font-size: 18px;
+                        padding-left: 32px;
+                    }
+                }
+            }
+            nav.disabled {
+                height: 10px;
+                position: absolute;
+                width: 100%;
+                top: 33px;
+                right: 0px;
+                z-index: 1000;
+                visibility: hidden;
+                overflow-y: hidden;
+                ul {
+                    li {
+                        font-size: 16px;
+                        padding-left: 14px;
+                    }
+                }
+            }
+            .btn-mobile {
+                display: flex;
+                padding: .5rem 1rem;
+                border: none;
+                background: none;
+                cursor: pointer;
+                gap: 1rem;
+            }
+            #hamburguer {
+                display: block;
+                width: 20px;
+                border-top: 2px solid #fff;
+            }
+            #hamburguer::after,
+            #hamburguer::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 2px;
+                background: #fff;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
      :host {
         .container {
             padding: 15px 15px;
