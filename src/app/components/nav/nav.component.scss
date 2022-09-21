@@ -31,6 +31,7 @@
     }
 }
 
+// Responsividade para Tablet
 @media screen and (max-width: 1024px) {
      :host {
         .container {
@@ -94,6 +95,7 @@
     }
 }
 
+// Responsividade para Mobile
 @media screen and (max-width: 480px) {
      :host {
         .container {

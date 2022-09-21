@@ -43,9 +43,41 @@
     }
 }
 
+// Responsividade para Laptops
+@media screen and (max-width: 1280px) {
+     :host {
+        div {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            padding-top: 125px;
+            .apresentacao {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                padding: 0px 0px 100px 0px;
+                text-align: center;
+            }
+            .foto {
+                margin: 0 auto;
+            }
+            .socialMedia {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    li {
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsividade para Tablet
 @media screen and (max-width: 1024px) {
      :host {
         div {
+            display: flex;
             flex-direction: column;
             padding-top: 100px;
             .apresentacao {
@@ -86,9 +118,11 @@
     }
 }
 
+// Responsividade para Mobile
 @media screen and (max-width: 480px) {
      :host {
         div {
+            display: flex;
             flex-direction: column;
             padding-top: 70px;
             .apresentacao {
