@@ -1,10 +1,16 @@
 <header class="container">
-    <ul>
-        <li><a [routerLink]="['']">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="">Projetos</a></li>
-        <li><a href="">Tecnologias</a></li>
-    </ul>
+    <button (click)="toggleMenu()" class="btn-mobile">
+    <span id="hamburguer"></span>
+    Menu
+    </button>
+    <nav [ngClass]="{'active': valor, 'disabled': !valor}">
+        <ul>
+            <li><a [routerLink]="['']">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="">Projetos</a></li>
+            <li><a href="">Tecnologias</a></li>
+        </ul>
+    </nav>
     <!-- <button type="button">
         <img src="/assets/icons/sun.svg" alt="Ícone de sol">
     </button> -->

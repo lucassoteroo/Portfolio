@@ -42,3 +42,45 @@
         }
     }
 }
+
+@media screen and (max-width: 418px) {
+     :host {
+        div {
+            flex-direction: column;
+            padding-top: 70px;
+            .apresentacao {
+                padding: 5px;
+                text-align: center;
+                padding-bottom: 70px;
+                h1 {
+                    font-size: 28px;
+                }
+                p {
+                    font-size: 22px;
+                }
+            }
+            .foto {
+                margin: 0 auto;
+                padding-bottom: 70px;
+                img {
+                    width: 270px;
+                }
+            }
+            .socialMedia {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    li {
+                        padding-bottom: 0;
+                        a {
+                            img {
+                                width: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

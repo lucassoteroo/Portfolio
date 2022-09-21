@@ -1,20 +1,25 @@
 :host {
     .container {
+        button {
+            display: none;
+        }
         background-color: var(--primary);
         width: 100%;
-        ul {
-            height: 60px;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            li {
-                color: var(--text-menu);
-                font-size: 18px;
-                font-weight: 300;
-                padding-left: 60px;
-                a:hover {
-                    text-decoration: underline;
+        nav {
+            ul {
+                height: 60px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                li {
+                    color: var(--text-menu);
+                    font-size: 18px;
+                    font-weight: 300;
+                    padding-left: 60px;
+                    a:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -23,5 +28,68 @@
         //         width: 21px;
         //     }
         // }
+    }
+}
+
+@media screen and (max-width: 418px) {
+     :host {
+        .container {
+            padding: 15px 15px;
+            button {
+                display: block;
+                font-size: 16px;
+                color: #fff;
+            }
+            nav.active {
+                height: 60px;
+                transition: .6s;
+                visibility: visible;
+                overflow-y: auto;
+                ul {
+                    li {
+                        font-size: 16px;
+                        padding-left: 14px;
+                    }
+                }
+            }
+            nav.disabled {
+                height: 10px;
+                position: absolute;
+                width: 100%;
+                top: 33px;
+                right: 0px;
+                z-index: 1000;
+                visibility: hidden;
+                overflow-y: hidden;
+                ul {
+                    li {
+                        font-size: 16px;
+                        padding-left: 14px;
+                    }
+                }
+            }
+            .btn-mobile {
+                display: flex;
+                padding: .5rem 1rem;
+                border: none;
+                background: none;
+                cursor: pointer;
+                gap: 1rem;
+            }
+            #hamburguer {
+                display: block;
+                width: 20px;
+                border-top: 2px solid #fff;
+            }
+            #hamburguer::after,
+            #hamburguer::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 2px;
+                background: #fff;
+                margin-top: 5px;
+            }
+        }
     }
 }
