@@ -6,7 +6,6 @@ import { AppRoutingModule } from '../app-routing.module';
 import { NavComponent } from './home/nav/nav.component';
 import { ApresentacaoComponent } from './home/apresentacao/apresentacao.component';
 import { DadosComponent } from './sobre/dados/dados.component';
-import { ResumoComponent } from './sobre/resumo/resumo.component';
 import { FormacaoComponent } from './sobre/formacao/formacao.component';
 
 
@@ -15,7 +14,6 @@ import { FormacaoComponent } from './sobre/formacao/formacao.component';
     NavComponent,
     ApresentacaoComponent,
     DadosComponent,
-    ResumoComponent,
     FormacaoComponent
   ],
   imports: [
@@ -26,7 +24,6 @@ import { FormacaoComponent } from './sobre/formacao/formacao.component';
     NavComponent,
     ApresentacaoComponent,
     DadosComponent,
-    ResumoComponent,
     FormacaoComponent
   ]
 })
