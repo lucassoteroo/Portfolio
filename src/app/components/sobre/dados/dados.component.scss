@@ -40,3 +40,36 @@
         }
     }
 }
+
+// Responsividade para Mobile
+@media screen and (max-width: 480px) {
+     :host {
+        .container {
+            flex-direction: column;
+            .dados {
+                width: 100%;
+                padding: 70px 10px 0px 10px;
+                h1 {
+                    font-size: 28px;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    li {
+                        font-size: 22px;
+                    }
+                }
+            }
+            .resumo {
+                width: 100%;
+                padding: 70px 10px 0px 10px;
+                h1 {
+                    font-size: 28px;
+                }
+                p {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
