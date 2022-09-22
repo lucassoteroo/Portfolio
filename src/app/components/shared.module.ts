@@ -24,7 +24,10 @@ import { FormacaoComponent } from './sobre/formacao/formacao.component';
   ],
   exports: [
     NavComponent,
-    ApresentacaoComponent
+    ApresentacaoComponent,
+    DadosComponent,
+    ResumoComponent,
+    FormacaoComponent
   ]
 })
 export class SharedModule { }
