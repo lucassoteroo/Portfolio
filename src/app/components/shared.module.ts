@@ -14,7 +14,7 @@ import { FormacaoComponent } from './sobre/formacao/formacao.component';
     NavComponent,
     ApresentacaoComponent,
     DadosComponent,
-    FormacaoComponent
+    FormacaoComponent,
   ],
   imports: [
     CommonModule,

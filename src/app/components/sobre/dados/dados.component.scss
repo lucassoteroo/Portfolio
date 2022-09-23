@@ -47,6 +47,20 @@
     }
 }
 
+// Responsividade para Laptops
+@media screen and (max-width: 1280px) {
+    :host {
+        .container {
+            .dados {
+                ul {
+                    grid-template-columns: repeat(1, 4fr);
+                }
+            }
+        }
+    }
+}
+
+
 // Responsividade para Tablet
 @media screen and (max-width: 1024px) {
     :host {
