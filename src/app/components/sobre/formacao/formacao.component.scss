@@ -1,0 +1,122 @@
+:host {
+
+    .container {
+        padding-top: 100px;
+
+        h1 {
+            text-align: center;
+            color: #000;
+            font-size: 32px;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            padding-top: 40px;
+
+            li {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .escola,
+            .estagio {
+                border-bottom-right-radius: 35px;
+                border-top-left-radius: 35px;
+                border: 3px solid #000;
+                margin-left: 80px;
+                padding: 20px 0px;
+            }
+
+            p {
+                color: #000;
+            }
+
+            .local {
+                font-weight: 900;
+                padding: 20px 0px;
+            }
+
+            .data {
+                font-style: italic;
+            }
+        }
+
+        .faculdade {
+            border-bottom-left-radius: 35px;
+            border-top-right-radius: 35px;
+            border: 3px solid #000;
+            margin-right: 80px;
+            padding: 20px 0px;
+
+            p {
+                color: #000;
+            }
+
+            .local {
+                font-weight: 900;
+                padding: 20px 0px;
+            }
+
+            .data {
+                font-style: italic;
+            }
+        }
+    }
+}
+
+
+// Responsividade para tablet
+@media screen and (max-width: 1024px) {
+    :host {
+        .container {
+            ul {
+
+                .escola,
+                .estagio,
+                .faculdade {
+                    margin: 0px 90px 50px 90px;
+                    border-radius: 35px;
+                }
+
+                .escola {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                }
+
+                .estagio {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                }
+
+                .faculdade {
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    :host {
+        .container {
+            h1 {
+                font-size: 28px;
+            }
+
+            ul {
+                li {
+                    font-size: 22px;
+                }
+
+                .escola,
+                .estagio,
+                .faculdade {
+                    margin: 0px 30px 50px 30px;
+                }
+            }
+        }
+    }
+}
