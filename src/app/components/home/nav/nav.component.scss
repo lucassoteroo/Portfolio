@@ -3,8 +3,10 @@
         button {
             display: none;
         }
+
         background-color: var(--primary);
         width: 100%;
+
         nav {
             ul {
                 height: 60px;
@@ -12,17 +14,20 @@
                 flex-direction: row;
                 justify-content: flex-start;
                 align-items: center;
+
                 li {
                     color: var(--text-menu);
                     font-size: 18px;
                     font-weight: 300;
                     padding-left: 60px;
+
                     a:hover {
                         text-decoration: underline;
                     }
                 }
             }
         }
+
         // button {
         //     img {
         //         width: 21px;
@@ -33,19 +38,23 @@
 
 // Responsividade para Tablet
 @media screen and (max-width: 1024px) {
-     :host {
+    :host {
         .container {
             padding: 15px 15px;
+            width: 96.1vw;
+
             button {
                 display: block;
                 font-size: 18px;
                 color: #fff;
             }
+
             nav.active {
                 height: 60px;
                 transition: .6s;
                 visibility: visible;
                 overflow-y: auto;
+
                 ul {
                     li {
                         font-size: 18px;
@@ -53,6 +62,7 @@
                     }
                 }
             }
+
             nav.disabled {
                 height: 10px;
                 position: absolute;
@@ -62,6 +72,7 @@
                 z-index: 1000;
                 visibility: hidden;
                 overflow-y: hidden;
+
                 ul {
                     li {
                         font-size: 16px;
@@ -69,6 +80,7 @@
                     }
                 }
             }
+
             .btn-mobile {
                 display: flex;
                 padding: .5rem 1rem;
@@ -77,11 +89,13 @@
                 cursor: pointer;
                 gap: 1rem;
             }
+
             #hamburguer {
                 display: block;
                 width: 20px;
                 border-top: 2px solid #fff;
             }
+
             #hamburguer::after,
             #hamburguer::before {
                 content: '';
@@ -97,19 +111,23 @@
 
 // Responsividade para Mobile
 @media screen and (max-width: 480px) {
-     :host {
+    :host {
         .container {
             padding: 15px 15px;
+            width: 92.6vw;
+
             button {
                 display: block;
                 font-size: 16px;
                 color: #fff;
             }
+
             nav.active {
                 height: 60px;
                 transition: .6s;
                 visibility: visible;
                 overflow-y: auto;
+
                 ul {
                     li {
                         font-size: 16px;
@@ -117,6 +135,7 @@
                     }
                 }
             }
+
             nav.disabled {
                 height: 10px;
                 position: absolute;
@@ -126,6 +145,7 @@
                 z-index: 1000;
                 visibility: hidden;
                 overflow-y: hidden;
+
                 ul {
                     li {
                         font-size: 16px;
@@ -133,6 +153,7 @@
                     }
                 }
             }
+
             .btn-mobile {
                 display: flex;
                 padding: .5rem 1rem;
@@ -141,11 +162,13 @@
                 cursor: pointer;
                 gap: 1rem;
             }
+
             #hamburguer {
                 display: block;
                 width: 20px;
                 border-top: 2px solid #fff;
             }
+
             #hamburguer::after,
             #hamburguer::before {
                 content: '';
