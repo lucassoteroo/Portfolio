@@ -7,6 +7,7 @@ import { NavComponent } from './home/nav/nav.component';
 import { ApresentacaoComponent } from './home/apresentacao/apresentacao.component';
 import { DadosComponent } from './sobre/dados/dados.component';
 import { FormacaoComponent } from './sobre/formacao/formacao.component';
+import { CarouselComponent } from './projetos/carousel/carousel.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { FormacaoComponent } from './sobre/formacao/formacao.component';
     ApresentacaoComponent,
     DadosComponent,
     FormacaoComponent,
+    CarouselComponent,
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,8 @@ import { FormacaoComponent } from './sobre/formacao/formacao.component';
     NavComponent,
     ApresentacaoComponent,
     DadosComponent,
-    FormacaoComponent
+    FormacaoComponent,
+    CarouselComponent,
   ]
 })
 export class SharedModule { }
