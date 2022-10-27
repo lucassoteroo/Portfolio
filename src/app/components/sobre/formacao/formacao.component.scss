@@ -1,15 +1,12 @@
+@import '../../../../assets/scss/mixin';
+
 :host {
 
     .container {
         padding-top: 100px;
 
         h1 {
-            text-align: center;
-            color: #000;
-            font-size: 32px;
-            font-weight: 900;
-            padding-bottom: 20px;
-            border-bottom: 3px solid var(--black);
+            @include page-h1;
             width: 70%;
             margin: 0 auto;
         }
@@ -26,43 +23,12 @@
 
             .escola,
             .estagio {
-                border-bottom-right-radius: 35px;
-                border-top-left-radius: 35px;
-                padding: 20px 0px;
-                text-align: right;
+                @include page-formacao(right);
             }
 
-            p {
-                color: #000;
-            }
-
-            .local {
-                font-weight: 900;
-                padding: 20px 0px;
-            }
-
-            .data {
-                font-style: italic;
-            }
 
             .faculdade {
-                border-bottom-left-radius: 35px;
-                border-top-right-radius: 35px;
-                padding: 20px 0px;
-                text-align: left;
-
-                p {
-                    color: #000;
-                }
-
-                .local {
-                    font-weight: 900;
-                    padding: 20px 0px;
-                }
-
-                .data {
-                    font-style: italic;
-                }
+                @include page-formacao(left);
             }
         }
 
@@ -89,18 +55,15 @@
                 }
 
                 .escola {
-                    grid-column-start: 1;
-                    grid-column-end: 3;
+                    @include page-formacao-grid;
                 }
 
                 .estagio {
-                    grid-column-start: 1;
-                    grid-column-end: 3;
+                    @include page-formacao-grid;
                 }
 
                 .faculdade {
-                    grid-column-start: 1;
-                    grid-column-end: 3;
+                    @include page-formacao-grid;
 
                 }
             }
