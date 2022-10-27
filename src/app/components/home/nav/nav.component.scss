@@ -16,13 +16,12 @@
                 align-items: center;
 
                 li {
-                    color: var(--text-menu);
                     font-size: 18px;
-                    font-weight: 300;
+                    font-weight: 900;
                     padding-left: 60px;
 
-                    a:hover {
-                        text-decoration: underline;
+                    a {
+                        color: var(--black);
                     }
                 }
             }

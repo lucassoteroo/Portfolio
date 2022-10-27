@@ -9,9 +9,11 @@
 
             h1 {
                 text-align: center;
-                color: #000;
+                color: var(--black);
                 font-size: 32px;
+                font-weight: 900;
                 padding-bottom: 20px;
+                border-bottom: 3px solid var(--black);
             }
 
             ul {
@@ -32,13 +34,15 @@
 
             h1 {
                 text-align: center;
-                color: #000;
+                color: var(--black);
                 font-size: 32px;
-                padding-bottom: 30px;
+                font-weight: 900;
+                padding-bottom: 20px;
+                border-bottom: 3px solid var(--black);
             }
 
             p {
-                color: #000;
+                color: var(--black);
                 font-size: 24px;
                 text-align: justify;
                 line-height: 1.5;
@@ -72,11 +76,13 @@
             .dados {
                 padding: 0px;
                 padding-top: 70px;
+                margin: unset;
             }
 
             .resumo {
                 padding: 0px;
                 padding-top: 70px;
+                margin: unset
             }
         }
     }
