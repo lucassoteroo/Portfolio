@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from '../app-routing.module';
 
+// Angular Material
+import { MatTabsModule } from '@angular/material/tabs';
+
 // Components
 import { NavComponent } from './home/nav/nav.component';
 import { ApresentacaoComponent } from './home/apresentacao/apresentacao.component';
 import { DadosComponent } from './sobre/dados/dados.component';
 import { FormacaoComponent } from './sobre/formacao/formacao.component';
-import { CarouselComponent } from './projetos/carousel/carousel.component';
-
+import { TabsComponent } from './projetos/tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -16,18 +18,20 @@ import { CarouselComponent } from './projetos/carousel/carousel.component';
     ApresentacaoComponent,
     DadosComponent,
     FormacaoComponent,
-    CarouselComponent,
+    TabsComponent,
   ],
   imports: [
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTabsModule
   ],
   exports: [
     NavComponent,
     ApresentacaoComponent,
     DadosComponent,
     FormacaoComponent,
-    CarouselComponent,
+    TabsComponent,
+    MatTabsModule
   ]
 })
 export class SharedModule { }
