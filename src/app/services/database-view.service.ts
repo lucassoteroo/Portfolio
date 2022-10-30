@@ -55,19 +55,19 @@ export class DatabaseViewService {
   private langingPageView: any = [
     {
       image: '../../../../../assets/images/aplicacoes/landingPage01.png',
-      text: 'Texto da imagem 1',
+      text: 'Primeira seção da tela de exemplo de uma landing page, contendo infomações sobre a empresa.',
     },
     {
       image: '../../../../../assets/images/aplicacoes/landingPage02.png',
-      text: 'Texto da imagem 2',
+      text: 'Segunda seção da tela de exemplo de uma landing page, contendo infomações sobre a localização da empresa.',
     },
     {
       image: '../../../../../assets/images/aplicacoes/landingPage03.png',
-      text: 'Texto da imagem 3',
+      text: 'Terceira seção da tela de exemplo de uma landing page, contendo infomações sobre os serviços da empresa.',
     },
     {
       image: '../../../../../assets/images/aplicacoes/landingPage04.png',
-      text: 'Texto da imagem 4',
+      text: 'Quarta seção da tela de exemplo de uma landing page, contendo os segmentos e ramos que empresa contém.',
     }
   ]
 

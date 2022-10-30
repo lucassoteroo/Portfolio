@@ -1,0 +1,31 @@
+@import '../../../../../assets/scss/mixin';
+
+:host {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto 60px auto;
+
+        p {
+            @include aplicacoes-p;
+        }
+
+        .tecnologias {
+
+            h3 {
+                @include aplicacoes-h3;
+            }
+
+            li {
+                @include aplicacoes-tecnologias(repeat(2, 2fr));
+
+                p {
+                    @include aplicacoes-tecnologias-p;
+                }
+
+                img {
+                    @include aplicacoes-tecnologias-img;
+                }
+            }
+        }
+    }
+}

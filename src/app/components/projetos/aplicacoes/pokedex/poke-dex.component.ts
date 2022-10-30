@@ -17,7 +17,6 @@ export class PokeDexComponent implements OnInit {
   ngOnInit(): void {
     this.view();
     this.tech();
-    console.log(this.databaseViewService.view[1])
   }
 
   public view() {
