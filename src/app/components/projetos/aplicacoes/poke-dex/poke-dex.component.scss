@@ -1,46 +1,29 @@
+@import '../../../../../assets/scss/mixin';
+
 :host {
     .container {
         max-width: 1200px;
         margin: 0 auto 60px auto;
 
         p {
-            color: var(--black);
-            text-align: center;
-            font-size: 20px;
-            font-weight: 400;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 30px 0 100px 0;
+            @include aplicacoes-p;
         }
 
         .tecnologias {
 
             h3 {
-                text-align: center;
-                font-size: 26px;
-                font-weight: 600;
-                color: var(--black);
-                padding-bottom: 60px;
+                @include aplicacoes-h3;
             }
 
             li {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                padding-bottom: 20px;
-                text-align: right;
+                @include aplicacoes-tecnologias(repeat(2, 1fr));
 
                 p {
-                    font-size: 20px;
-                    font-weight: 400;
-                    color: var(--black);
-                    padding: 0;
-                    margin: auto 0px auto auto;
+                    @include aplicacoes-tecnologias-p;
                 }
 
                 img {
-                    width: 30px;
-                    text-align: center;
-                    margin-left: 50px;
+                    @include aplicacoes-tecnologias-img;
                 }
             }
         }
