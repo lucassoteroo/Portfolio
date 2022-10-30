@@ -33,11 +33,11 @@ export class DatabaseViewService {
   private devflixView: any = [
     {
       image: '../../../../../assets/images/aplicacoes/devflixHome.png',
-      text: 'Texto da imagem 1',
+      text: 'Tela de início da aplicação onde tem um modal de cadastro, nele contém campos de nome, sobrenome e senha. Onde o campo de email e senha são obrigatórios.',
     },
     {
       image: '../../../../../assets/images/aplicacoes/devflixIndex.png',
-      text: 'Texto da imagem 2',
+      text: 'Tela inicial da aplicação contém um clone da tela da netflix, contando com um carrosel. Ao clicar no filme, o usuário é redirecionado para um trailer do filme no youtube.',
     }
   ]
 

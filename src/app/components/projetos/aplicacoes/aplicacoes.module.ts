@@ -2,17 +2,20 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // Aplicações
-import { PokeDexComponent } from './poke-dex/poke-dex.component';
+import { PokeDexComponent } from './pokedex/poke-dex.component';
+import { DevflixComponent } from './devflix/devflix.component';
 
 @NgModule({
   declarations: [
-    PokeDexComponent
+    PokeDexComponent,
+    DevflixComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    PokeDexComponent
+    PokeDexComponent,
+    DevflixComponent
   ]
 })
 export class AplicacoesModule { }
