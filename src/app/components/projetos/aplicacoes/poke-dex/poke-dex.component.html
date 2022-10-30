@@ -1,0 +1,15 @@
+<div class="container">
+    <div *ngFor="let item of getViewPokedex">
+        <img [src]="item.image" alt="imagem do projeto">
+        <p>{{ item.text }}</p>
+    </div>
+    <div class="tecnologias">
+        <h3>Tecnologias Usadas</h3>
+        <ul *ngFor="let item of getTechPokedex">
+            <li>
+                <p>{{ item.tech }}</p>
+                <img [src]="item.image" alt="imagem da logo">
+            </li>
+        </ul>
+    </div>
+</div>
