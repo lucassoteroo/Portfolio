@@ -109,11 +109,12 @@
 @mixin aplicacoes-p {
     color: var(--black);
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
     max-width: 900px;
     margin: 0 auto;
     padding: 30px 0 100px 0;
+    line-height: 1.5;
 }
 
 @mixin aplicacoes-h3 {
@@ -132,7 +133,7 @@
 }
 
 @mixin aplicacoes-tecnologias-p {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
     color: var(--black);
     padding: 0;
@@ -140,7 +141,7 @@
 }
 
 @mixin aplicacoes-tecnologias-img {
-    width: 30px;
+    width: 35px;
     text-align: center;
     margin-left: 50px;
 }

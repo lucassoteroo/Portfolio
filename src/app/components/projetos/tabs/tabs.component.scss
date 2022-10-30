@@ -31,8 +31,7 @@
 }
 
 .mat-ink-bar {
-    height: 4px !important;
-    background-color: var(--black) !important;
+    height: 0px !important;
 }
 
 // Responsividade para tablet
@@ -57,6 +56,6 @@
     }
 
     .mat-tab-label-content {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
