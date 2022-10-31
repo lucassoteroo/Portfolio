@@ -12,6 +12,7 @@ import { DadosComponent } from './sobre/dados/dados.component';
 import { FormacaoComponent } from './sobre/formacao/formacao.component';
 import { TabsComponent } from './projetos/tabs/tabs.component';
 import { AplicacoesModule } from './projetos/aplicacoes/aplicacoes.module';
+import { TecnologiasComponent } from './tecnologias/tecnologias.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AplicacoesModule } from './projetos/aplicacoes/aplicacoes.module';
     DadosComponent,
     FormacaoComponent,
     TabsComponent,
+    TecnologiasComponent,
   ],
   imports: [
     CommonModule,
@@ -34,7 +36,8 @@ import { AplicacoesModule } from './projetos/aplicacoes/aplicacoes.module';
     FormacaoComponent,
     TabsComponent,
     MatTabsModule,
-    AplicacoesModule
+    AplicacoesModule,
+    TecnologiasComponent
   ]
 })
 export class SharedModule { }
