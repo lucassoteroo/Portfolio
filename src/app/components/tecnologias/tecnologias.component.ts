@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatabaseTechService } from 'src/app/services/database-tech.service';
 
 @Component({
   selector: 'app-tecnologias',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tecnologias.component.scss']
 })
 export class TecnologiasComponent implements OnInit {
+  public getTech: any;
 
-  constructor() { }
+  constructor(
+    private databaseTechService: DatabaseTechService
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  public tech() {
+    return this.getTech = this.databaseTechService.tech;
   }
 
 }

@@ -17,6 +17,10 @@ export class DatabaseViewService {
 
   private pokedexTech: any = [
     {
+      tech: 'HTML',
+      image: '../../../../../assets/images/icons/ico-html.svg'
+    },
+    {
       tech: 'Angular',
       image: '../../../../../assets/images/icons/ico-angular.svg'
     },
@@ -42,6 +46,10 @@ export class DatabaseViewService {
   ]
 
   private devflixTech: any = [
+    {
+      tech: 'HTML',
+      image: '../../../../../assets/images/icons/ico-html.svg'
+    },
     {
       tech: 'Javascript',
       image: '../../../../../assets/images/icons/ico-javascript.svg'
@@ -72,6 +80,10 @@ export class DatabaseViewService {
   ]
 
   private langingPageTech: any = [
+    {
+      tech: 'HTML',
+      image: '../../../../../assets/images/icons/ico-html.svg'
+    },
     {
       tech: 'Angular',
       image: '../../../../../assets/images/icons/ico-angular.svg'

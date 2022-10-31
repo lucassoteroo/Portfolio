@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class DatabaseTechService {
   private techView: any = [
     {
-      image: '../../../assets/images/icons/ico-angular.svg',
+      image: '../../../assets/images/icons/ico-html.svg',
       nome: 'HTML 5',
       cursos: [
         'Densenvolvimento Front-End do Zero ao Pro',
@@ -14,7 +14,7 @@ export class DatabaseTechService {
       ]
     },
     {
-      image: '../../../assets/images/icons/ico-angular.svg',
+      image: '../../../assets/images/icons/ico-css.svg',
       nome: 'CSS 3',
       cursos: [
         'Densenvolvimento Front-End do Zero ao Pro',
@@ -46,6 +46,13 @@ export class DatabaseTechService {
       nome: 'Typescript',
       cursos: [
         'Dominando Typescript'
+      ]
+    },
+    {
+      image: '../../../assets/images/icons/ico-typescript.svg',
+      nome: 'MySQL',
+      cursos: [
+        'Banco de Dados SQL do Zero ao Avançado 2022'
       ]
     },
   ]
