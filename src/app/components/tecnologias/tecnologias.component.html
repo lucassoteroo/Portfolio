@@ -1,1 +1,78 @@
-<div echarts [options]="option"></div>
+<div class="container">
+    <div echarts [options]="option"></div>
+    <div class="tabela">
+        <table>
+            <tr class="cabecalho">
+                <td>Tecnologia</td>
+                <td>Cursos</td>
+                <td>Logo</td>
+            </tr>
+            <tr>
+                <td>{{ dadosPrincipais[0].nome }}</td>
+                <td>
+                    <ul *ngFor="let item of dadosCursosHtml">
+                        <li>{{ item.nome }}</li>
+                    </ul>
+                </td>
+                <td>
+                    <img [src]="dadosPrincipais[0].img" alt="logo">
+                </td>
+            </tr>
+            <tr>
+                <td>{{ dadosPrincipais[1].nome }}</td>
+                <td>
+                    <ul *ngFor="let item of dadosCursosCss">
+                        <li>{{ item.nome }}</li>
+                    </ul>
+                </td>
+                <td>
+                    <img [src]="dadosPrincipais[1].img" alt="logo">
+                </td>
+            </tr>
+            <tr>
+                <td>{{ dadosPrincipais[2].nome }}</td>
+                <td>
+                    <ul *ngFor="let item of dadosCursosJs">
+                        <li>{{ item.nome }}</li>
+                    </ul>
+                </td>
+                <td>
+                    <img [src]="dadosPrincipais[2].img" alt="logo">
+                </td>
+            </tr>
+            <tr>
+                <td>{{ dadosPrincipais[3].nome }}</td>
+                <td>
+                    <ul *ngFor="let item of dadosCursosAngular">
+                        <li>{{ item.nome }}</li>
+                    </ul>
+                </td>
+                <td>
+                    <img [src]="dadosPrincipais[3].img" alt="logo">
+                </td>
+            </tr>
+            <tr>
+                <td>{{ dadosPrincipais[4].nome }}</td>
+                <td>
+                    <ul *ngFor="let item of dadosCursosTs">
+                        <li>{{ item.nome }}</li>
+                    </ul>
+                </td>
+                <td>
+                    <img [src]="dadosPrincipais[4].img" alt="logo">
+                </td>
+            </tr>
+            <tr>
+                <td>{{ dadosPrincipais[5].nome }}</td>
+                <td>
+                    <ul *ngFor="let item of dadosCursosMySql">
+                        <li>{{ item.nome }}</li>
+                    </ul>
+                </td>
+                <td>
+                    <img [src]="dadosPrincipais[5].img" alt="logo">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

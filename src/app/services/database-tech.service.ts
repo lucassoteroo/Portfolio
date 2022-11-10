@@ -54,7 +54,7 @@ export class DatabaseTechService {
       ]
     },
     {
-      image: '../../../assets/images/icons/ico-typescript.svg',
+      image: '../../../assets/images/icons/ico-mysql.svg',
       nome: 'MySQL',
       anos: 1,
       cursos: [
