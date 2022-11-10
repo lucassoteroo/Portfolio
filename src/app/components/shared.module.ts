@@ -13,6 +13,8 @@ import { FormacaoComponent } from './sobre/formacao/formacao.component';
 import { TabsComponent } from './projetos/tabs/tabs.component';
 import { AplicacoesModule } from './projetos/aplicacoes/aplicacoes.module';
 import { TecnologiasComponent } from './tecnologias/tecnologias.component';
+import { NgxEchartsModule } from 'ngx-echarts';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,10 @@ import { TecnologiasComponent } from './tecnologias/tecnologias.component';
     CommonModule,
     AppRoutingModule,
     MatTabsModule,
-    AplicacoesModule
+    AplicacoesModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts'), // or import('./path-to-my-custom-echarts')
+    }),
   ],
   exports: [
     NavComponent,
