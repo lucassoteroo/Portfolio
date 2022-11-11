@@ -10,8 +10,8 @@ export class DatabaseTechService {
       nome: 'HTML 5',
       anos: 4,
       cursos: [
-        'Densenvolvimento Front-End do Zero ao Pro',
-        'Curso em Vídeo'
+        '- Densenvolvimento Front-End do Zero ao Pro',
+        '- Curso em Vídeo'
       ]
     },
     {
@@ -19,8 +19,8 @@ export class DatabaseTechService {
       nome: 'CSS 3',
       anos: 4,
       cursos: [
-        'Densenvolvimento Front-End do Zero ao Pro',
-        'Curso em Vídeo'
+        '- Densenvolvimento Front-End do Zero ao Pro',
+        '- Curso em Vídeo'
       ]
     },
     {
@@ -28,11 +28,11 @@ export class DatabaseTechService {
       nome: 'Javascript',
       anos: 3,
       cursos: [
-        'Programação para Internet com Javascipt',
-        'Introdução a Biblioteca JQuery',
-        'Javascipt ES6 Essencial',
-        'Curso em Vídeo',
-        'Densenvolvimento Front-End do Zero ao Pro'
+        '- Programação para Internet com Javascipt',
+        '- Introdução a Biblioteca JQuery',
+        '- Javascipt ES6 Essencial',
+        '- Curso em Vídeo',
+        '- Densenvolvimento Front-End do Zero ao Pro'
       ]
     },
     {
@@ -40,9 +40,9 @@ export class DatabaseTechService {
       nome: 'Angular',
       anos: 2,
       cursos: [
-        'Instalando e Preparando o Ambiente Angular',
-        'Introdução Ao Angular 8',
-        'Curso de Angular 2 (v14+) Typescript do Básico ao Avançado'
+        '- Instalando e Preparando o Ambiente Angular',
+        '- Introdução Ao Angular 8',
+        '- Curso de Angular 2 (v14+) Typescript do Básico ao Avançado'
       ]
     },
     {
@@ -50,7 +50,7 @@ export class DatabaseTechService {
       nome: 'Typescript',
       anos: 2,
       cursos: [
-        'Dominando Typescript'
+        '- Dominando Typescript'
       ]
     },
     {
@@ -58,7 +58,7 @@ export class DatabaseTechService {
       nome: 'MySQL',
       anos: 1,
       cursos: [
-        'Banco de Dados SQL do Zero ao Avançado 2022'
+        '- Banco de Dados SQL do Zero ao Avançado 2022'
       ]
     },
   ]

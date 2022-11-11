@@ -2,17 +2,21 @@
 
 :host {
     .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
 
         .dados {
-            @include page-dados-espacamento(70px, 10px, 0px, 10px);
+            @include page-dados-espacamento(70px, 0px, 0px, 10px);
 
             h1 {
                 @include page-h1;
+                width: 70%;
+                margin: 0 auto;
             }
 
             ul {
+                width: 50%;
+                margin: 0 auto;
                 display: grid;
                 grid-template-columns: repeat(2, 2fr);
 
@@ -25,10 +29,12 @@
         }
 
         .resumo {
-            @include page-dados-espacamento(70px, 80px, 0px, 10px);
+            @include page-dados-espacamento(70px, 0px, 0px, 10px);
 
             h1 {
                 @include page-h1;
+                width: 70%;
+                margin: 0 auto;
             }
 
             p {
@@ -36,6 +42,8 @@
                 font-size: 24px;
                 text-align: justify;
                 line-height: 1.5;
+                width: 70%;
+                margin: 0 auto;
             }
         }
     }
@@ -61,7 +69,6 @@
         .container {
             display: flex;
             flex-direction: column;
-            padding: 0px 40px;
 
             .dados {
                 @include page-dados-espacamento-tablet;
@@ -69,6 +76,10 @@
 
             .resumo {
                 @include page-dados-espacamento-tablet;
+
+                p {
+                    width: 90%;
+                }
             }
         }
     }
@@ -80,18 +91,18 @@
         .container {
             display: flex;
             flex-direction: column;
-            padding: 0px 35px;
 
             .dados {
                 width: 100%;
 
                 h1 {
-                    font-size: 28px;
+                    font-size: 26px;
                 }
 
                 ul {
                     display: flex;
                     flex-direction: column;
+                    width: 90%;
 
                     li {
                         font-size: 22px;
@@ -103,7 +114,7 @@
                 width: 100%;
 
                 h1 {
-                    font-size: 28px;
+                    font-size: 26px;
                 }
 
                 p {

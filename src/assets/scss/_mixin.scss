@@ -1,14 +1,13 @@
 @mixin page-h1 {
     text-align: center;
     color: var(--black);
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 900;
     padding-bottom: 20px;
     border-bottom: 3px solid var(--black);
 }
 
 @mixin page-dados-espacamento($top, $right, $bottom, $left) {
-    margin: 0 auto;
     padding: $top $right $bottom $left;
 }
 
@@ -16,6 +15,10 @@
     padding: 0px;
     padding-top: 70px;
     margin: unset;
+
+    h1 {
+        width: 90%;
+    }
 }
 
 @mixin page-formacao($align) {
