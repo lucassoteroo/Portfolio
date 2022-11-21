@@ -6,6 +6,7 @@ import { HomeComponent } from './modules/home.component';
 import { SobreComponent } from './modules/pages/sobre/sobre.component';
 import { ProjetosComponent } from './modules/pages/projetos/projetos.component';
 import { TechComponent } from './modules/pages/tech/tech.component';
+import { CertificadosComponent } from './modules/pages/certificados/certificados.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'tecnologias',
     component: TechComponent
+  },
+  {
+    path: 'certificados',
+    component: CertificadosComponent
   }
 ];
 

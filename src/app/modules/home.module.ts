@@ -9,13 +9,15 @@ import { SharedModule } from '../components/shared.module';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ProjetosComponent } from './pages/projetos/projetos.component';
 import { TechComponent } from './pages/tech/tech.component';
+import { CertificadosComponent } from './pages/certificados/certificados.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     SobreComponent,
     ProjetosComponent,
-    TechComponent
+    TechComponent,
+    CertificadosComponent
   ],
   imports: [
     CommonModule,
