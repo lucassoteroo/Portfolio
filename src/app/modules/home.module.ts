@@ -9,7 +9,7 @@ import { SharedModule } from '../components/shared.module';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { ProjetosComponent } from './pages/projetos/projetos.component';
 import { TechComponent } from './pages/tech/tech.component';
-import { CertificadosComponent } from './pages/certificados/certificados.component';
+import { CertificadosPageComponent } from './pages/certificados/certificados-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { CertificadosComponent } from './pages/certificados/certificados.compone
     SobreComponent,
     ProjetosComponent,
     TechComponent,
-    CertificadosComponent
+    CertificadosPageComponent
   ],
   imports: [
     CommonModule,

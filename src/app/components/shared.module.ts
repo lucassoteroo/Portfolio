@@ -14,6 +14,7 @@ import { TabsComponent } from './projetos/tabs/tabs.component';
 import { AplicacoesModule } from './projetos/aplicacoes/aplicacoes.module';
 import { TecnologiasComponent } from './tecnologias/tecnologias.component';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { CertificadosComponent } from './certificados/certificados.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
     FormacaoComponent,
     TabsComponent,
     TecnologiasComponent,
+    CertificadosComponent,
   ],
   imports: [
     CommonModule,
@@ -42,7 +44,8 @@ import { NgxEchartsModule } from 'ngx-echarts';
     TabsComponent,
     MatTabsModule,
     AplicacoesModule,
-    TecnologiasComponent
+    TecnologiasComponent,
+    CertificadosComponent,
   ]
 })
 export class SharedModule { }

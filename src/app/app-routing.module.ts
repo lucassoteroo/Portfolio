@@ -6,7 +6,7 @@ import { HomeComponent } from './modules/home.component';
 import { SobreComponent } from './modules/pages/sobre/sobre.component';
 import { ProjetosComponent } from './modules/pages/projetos/projetos.component';
 import { TechComponent } from './modules/pages/tech/tech.component';
-import { CertificadosComponent } from './modules/pages/certificados/certificados.component';
+import { CertificadosPageComponent } from './modules/pages/certificados/certificados-page.component';
 
 const routes: Routes = [
   {
@@ -27,7 +27,7 @@ const routes: Routes = [
   },
   {
     path: 'certificados',
-    component: CertificadosComponent
+    component: CertificadosPageComponent
   }
 ];
 
