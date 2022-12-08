@@ -4,35 +4,52 @@
         <mat-expansion-panel hideToggle>
             <mat-expansion-panel-header>
                 <mat-panel-title>
-                    Angular
+                    {{ dadosTitulosCertificados[0] }}
                 </mat-panel-title>
-                <mat-panel-description>
-                    This is a summary of the content
-                </mat-panel-description>
             </mat-expansion-panel-header>
-            <p>This is the primary content of the panel.</p>
+            <div class="certificados" *ngFor="let item of dadosCertificadosJs">
+                <img [src]="item" alt="certificado">
+            </div>
         </mat-expansion-panel>
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
             <mat-expansion-panel-header>
                 <mat-panel-title>
-                    Typescript
+                    {{ dadosTitulosCertificados[1] }}
                 </mat-panel-title>
-                <mat-panel-description>
-                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
-                </mat-panel-description>
             </mat-expansion-panel-header>
-            <p>I'm visible because I am open</p>
+            <div class="certificados" *ngFor="let item of dadosCertificadosTs">
+                <img [src]="item" alt="certificado">
+            </div>
         </mat-expansion-panel>
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
             <mat-expansion-panel-header>
                 <mat-panel-title>
-                    Angular
+                    {{ dadosTitulosCertificados[2] }}
                 </mat-panel-title>
-                <mat-panel-description>
-                    Currently I am {{panelOpenState ? 'open' : 'closed'}}
-                </mat-panel-description>
             </mat-expansion-panel-header>
-            <p>I'm visible because I am open</p>
+            <div class="certificados" *ngFor="let item of dadosCertificadosAngular">
+                <img [src]="item" alt="certificado">
+            </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{ dadosTitulosCertificados[3] }}
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="certificados" *ngFor="let item of dadosCertificadosDocker">
+                <img [src]="item" alt="certificado">
+            </div>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    {{ dadosTitulosCertificados[4] }}
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="certificados" *ngFor="let item of dadosCertificadosSql">
+                <img [src]="item" alt="certificado">
+            </div>
         </mat-expansion-panel>
     </mat-accordion>
 </div>
