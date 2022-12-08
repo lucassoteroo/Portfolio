@@ -4,6 +4,7 @@ import { AppRoutingModule } from '../app-routing.module';
 
 // Angular Material
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 // Components
 import { NavComponent } from './home/nav/nav.component';
@@ -13,8 +14,8 @@ import { FormacaoComponent } from './sobre/formacao/formacao.component';
 import { TabsComponent } from './projetos/tabs/tabs.component';
 import { AplicacoesModule } from './projetos/aplicacoes/aplicacoes.module';
 import { TecnologiasComponent } from './tecnologias/tecnologias.component';
-import { NgxEchartsModule } from 'ngx-echarts';
 import { CertificadosComponent } from './certificados/certificados.component';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { CertificadosComponent } from './certificados/certificados.component';
     CommonModule,
     AppRoutingModule,
     MatTabsModule,
+    MatExpansionModule,
     AplicacoesModule,
     NgxEchartsModule.forRoot({
       echarts: () => import('echarts'), // or import('./path-to-my-custom-echarts')
@@ -43,6 +45,7 @@ import { CertificadosComponent } from './certificados/certificados.component';
     FormacaoComponent,
     TabsComponent,
     MatTabsModule,
+    MatExpansionModule,
     AplicacoesModule,
     TecnologiasComponent,
     CertificadosComponent,
