@@ -93,7 +93,7 @@ export class TecnologiasComponent implements OnInit {
         name: 'ano',
         type: 'bar',
         data: this.dadosAnos,
-        color: '#1976D2',
+        color: '#1C1C1C',
       },
     ]
   };
