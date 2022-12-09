@@ -55,6 +55,17 @@
             padding: 15px 15px;
             width: 92.6vw;
             @include nav-media-scren(16px);
+
+            .btn-mobile {
+                padding-bottom: 10px;
+            }
+
+            nav {
+                ul {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
         }
     }
 }

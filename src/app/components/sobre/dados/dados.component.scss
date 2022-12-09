@@ -89,8 +89,8 @@
 @media screen and (max-width: 480px) {
     :host {
         .container {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
 
             .dados {
                 width: 100%;
@@ -106,6 +106,7 @@
 
                     li {
                         font-size: 22px;
+                        padding-left: 0px;
                     }
                 }
             }
