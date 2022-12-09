@@ -1,7 +1,33 @@
-.container {
-    color: #000;
+@import '../../../assets/scss/mixin';
 
-    .mat-mdc-form-field+.mat-mdc-form-field {
-        margin-left: 8px;
+.container {
+    padding: 60px 0px 60px 0px;
+
+    .expansion-panel {
+        width: 1200px;
+        margin-left: 370px;
+
+        .mat-expansion-panel {
+            background: none;
+            border: 1px solid;
+        }
+
+        .mat-expansion-panel-header-title {
+            display: block;
+            flex-grow: 1;
+            margin-right: 16px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            height: 25px;
+        }
+
+        .certificados {
+            text-align: center;
+
+            img {
+                width: 750px;
+            }
+        }
     }
 }

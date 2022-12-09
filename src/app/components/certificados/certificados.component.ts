@@ -48,7 +48,6 @@ export class CertificadosComponent implements OnInit {
     })
 
     this.dadosTitulosCertificados = [...new Set(titulosCertificados)]
-    // console.log(this.dadosCertificadosJs)
   }
 
 
