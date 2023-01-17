@@ -14,6 +14,10 @@ export class DatabaseCertificadosService {
       image: './assets/images/certificados/jsEs6Essencial.jpg',
     },
     {
+      sobre: 'Javascript',
+      image: './assets/images/certificados/JavaScriptFuncionalEReativo.jpg',
+    },
+    {
       sobre: 'Typescript',
       image: './assets/images/certificados/dominandoTypescript.jpg',
     },
