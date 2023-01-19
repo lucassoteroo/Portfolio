@@ -30,6 +30,46 @@
             }
         }
 
+        .icon-contato {
+            background-repeat: no-repeat;
+            background-position: right center;
+            padding-top: 35px;
+        }
+
+        .gmail {
+            background-image: url("../../../../assets/images/icons/gmail.svg");
+
+            &:hover {
+                background-image: url("../../../../assets/images/icons/gmail-hover.svg");
+            }
+        }
+
+        .linkedin {
+            background-image: url("../../../../assets/images/icons/linkedin.svg");
+
+            &:hover {
+                background-image: url("../../../../assets/images/icons/linkedin-hover.svg");
+            }
+        }
+
+        .github {
+            background-image: url("../../../../assets/images/icons/github.svg");
+
+            &:hover {
+                background-image: url("../../../../assets/images/icons/github-hover.svg");
+                background-color: #000;
+                border-radius: 50%;
+            }
+        }
+
+        .instagram {
+            background-image: url("../../../../assets/images/icons/instagram.svg");
+
+            &:hover {
+                background-image: url("../../../../assets/images/icons/instagram-hover.svg");
+            }
+        }
+
         .socialMedia {
             display: flex;
             flex-direction: column;
@@ -37,14 +77,16 @@
             padding-right: 10px;
 
             ul {
+                width: 35px;
+
                 li {
                     padding-bottom: 20px;
 
-                    a {
-                        img {
-                            width: 35px;
-                        }
-                    }
+                    // a {
+                    //     img {
+                    //         width: 35px;
+                    //     }
+                    // }
                 }
             }
         }

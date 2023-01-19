@@ -28,10 +28,15 @@
 
         .certificados {
             text-align: center;
+            padding-bottom: 30px;
 
             img {
                 width: 750px;
             }
+        }
+
+        .certificados:last-child {
+            padding-bottom: 0px;
         }
     }
 }
