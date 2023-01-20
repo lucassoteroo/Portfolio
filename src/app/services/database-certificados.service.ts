@@ -26,6 +26,10 @@ export class DatabaseCertificadosService {
       image: './assets/images/certificados/angularAvancado(v13)typescriptAvancado.jpg',
     },
     {
+      sobre: 'Git',
+      image: './assets/images/certificados/gitCompleto.jpg',
+    },
+    {
       sobre: 'Docker',
       image: './assets/images/certificados/dockerFerramentaEssencialParaDesenvolvedores.jpg',
     },

@@ -13,6 +13,7 @@ export class CertificadosComponent implements OnInit {
   dadosCertificadosJs: any = [];
   dadosCertificadosTs: any = [];
   dadosCertificadosAngular: any = [];
+  dadosCertificadosGit: any = [];
   dadosCertificadosDocker: any = [];
   dadosCertificadosSql: any = [];
 
@@ -38,6 +39,9 @@ export class CertificadosComponent implements OnInit {
       }
       if (item.sobre === 'Angular') {
         this.dadosCertificadosAngular.push(item.image)
+      }
+      if (item.sobre === 'Git') {
+        this.dadosCertificadosGit.push(item.image)
       }
       if (item.sobre === 'Docker') {
         this.dadosCertificadosDocker.push(item.image)

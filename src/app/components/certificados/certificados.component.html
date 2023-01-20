@@ -37,7 +37,7 @@
                         {{ dadosTitulosCertificados[3] }}
                     </mat-panel-title>
                 </mat-expansion-panel-header>
-                <div class="certificados" *ngFor="let item of dadosCertificadosDocker">
+                <div class="certificados" *ngFor="let item of dadosCertificadosGit">
                     <img [src]="item" alt="certificado">
                 </div>
             </mat-expansion-panel>
@@ -45,6 +45,16 @@
                 <mat-expansion-panel-header>
                     <mat-panel-title>
                         {{ dadosTitulosCertificados[4] }}
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="certificados" *ngFor="let item of dadosCertificadosDocker">
+                    <img [src]="item" alt="certificado">
+                </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        {{ dadosTitulosCertificados[5] }}
                     </mat-panel-title>
                 </mat-expansion-panel-header>
                 <div class="certificados" *ngFor="let item of dadosCertificadosSql">
